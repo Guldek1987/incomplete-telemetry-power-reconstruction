@@ -5,7 +5,6 @@
 /Models/
 /Predictions/
 /Tables/
-/Figures/
 **/.ipynb_checkpoints/
 **/__pycache__/
 *.pyc
