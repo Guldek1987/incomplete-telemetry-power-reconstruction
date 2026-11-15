@@ -1,0 +1,4 @@
+Stage,Model,Coverage95,Width95_kW,IntervalScore95_kW
+eco_independent_zero_shot,Proposed model,0.9280734592013888,0.6667913980854102,2.3166852617201164
+eco_independent_zero_shot,ExtraTrees spread,0.9561767578125,0.8838145244516421,2.387547122863495
+eco_independent_zero_shot,CostSensitiveClassifier,0.9360894097222222,0.7258913529970472,3.0360249616045367

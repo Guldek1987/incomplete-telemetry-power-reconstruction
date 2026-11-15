@@ -1,0 +1,120 @@
+dataset,house,original_sensor,original_description,canonical_type,unit,role,evidence,confidence_rule
+Plegma,1,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,ac_2,A/C Bedroom,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,1,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_01/Metadata_raw_H1.txt,exact metadata/name rule
+Plegma,2,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,kettle,Kettle,kettle,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,2,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_02/Metadata_raw_H2.txt,exact metadata/name rule
+Plegma,3,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,ac_2,A/C Bedroom,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,3,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_03/Metadata_raw_H3.txt,exact metadata/name rule
+Plegma,4,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,ac_2,A/C Bedroom,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,4,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_04/Metadata_raw_H4.txt,exact metadata/name rule
+Plegma,5,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,dishwasher,Dishwasher,dishwasher,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,5,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_05/Metadata_raw_H5.txt,exact metadata/name rule
+Plegma,6,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,6,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,6,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,6,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,6,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,6,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_06/Metadata_raw_H6.txt,exact metadata/name rule
+Plegma,7,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,ac_2,A/C Bedroom,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,7,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_07/Metadata_raw_H7.txt,exact metadata/name rule
+Plegma,8,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,dishwasher,Dishwasher,dishwasher,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,8,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_08/Metadata_raw_H8.txt,exact metadata/name rule
+Plegma,9,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,9,washing_machine,Washing machine - tumble dryer,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_09/Metadata_raw_H9.txt,exact metadata/name rule
+Plegma,10,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,ac_2,A/C Bedroom,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,dishwasher,Dishwasher,dishwasher,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,10,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_10/Metadata_raw_H10.txt,exact metadata/name rule
+Plegma,11,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,ac_2,A/C Bedroom 1,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,ac_3,A/C Bedroom 2,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,11,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_11/Metadata_raw_H11.txt,exact metadata/name rule
+Plegma,12,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,dishwasher,Dishwasher,dishwasher,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,fridge_1,Fridge Main,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,fridge_2,Fridge Secondary,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,12,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_12/Metadata_raw_H12.txt,exact metadata/name rule
+Plegma,13,A,Current (Ampere),aggregate_meter_current,A,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,P_agg,Active Power (Watt),aggregate,W,aggregate,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,V,Voltage (Volt),aggregate_meter_voltage,V,excluded_proxy,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,ac_1,A/C Living room,HVAC/air_conditioner,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,boiler,Water boiler,water_heater,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,fridge,Fridge,refrigerator/freezer,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,humidity (%),Internal humidity,indoor_humidity,%,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,temperature (C),Internal temperature,indoor_temperature,degC,environment,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule
+Plegma,13,washing_machine,Washing machine,washing_machine,W,auxiliary_power,Data/Interim/Plegma_extracted/Raw_Dataset/House_13/Metadata_raw_H13.txt,exact metadata/name rule

@@ -1,0 +1,12 @@
+# Working folders created when the notebooks are re-executed
+/Data/
+/Configs/
+/Manifests/
+/Models/
+/Predictions/
+/Tables/
+/Figures/
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.pyc
+.DS_Store

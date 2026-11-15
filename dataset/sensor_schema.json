@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "power_types": [
+    "aggregate",
+    "refrigerator/freezer",
+    "washing_machine",
+    "dishwasher",
+    "kettle",
+    "microwave",
+    "cooker/oven",
+    "water_heater",
+    "HVAC/air_conditioner",
+    "television/entertainment",
+    "computer",
+    "lighting",
+    "dehumidifier",
+    "miscellaneous",
+    "unknown"
+  ],
+  "context_types": [
+    "indoor_temperature",
+    "indoor_humidity"
+  ],
+  "unresolved_type": "unknown",
+  "forbidden_current_channels": [
+    "P_agg",
+    "A",
+    "V"
+  ],
+  "forbidden_features": [
+    "current_target_coverage",
+    "current_target_validity",
+    "monitored_fraction",
+    "residual_load"
+  ],
+  "history_end": "strictly_before_current_minute",
+  "learned_house_id": false,
+  "learned_channel_index": false
+}

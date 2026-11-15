@@ -1,0 +1,46 @@
+{
+  "run_id": "guldana_n3_20261011_v03",
+  "revision_number": 3,
+  "lifetime_revision_limit": 3,
+  "registered_utc": "2026-10-11T11:49:21.180232+00:00",
+  "name": "causal_pattern_residual_adapter",
+  "status": "registered_before_fit",
+  "motivation": "Development negative bias and short-gap error of retained temporal model. No test outcome determines parameters or acceptance.",
+  "hypothesis": "A train-only absolute-error residual learner can expose causal recent-level, freshness and load-change patterns obscured by the joint-state objective.",
+  "one_candidate": true,
+  "base": "Immutable temporal_only neural checkpoints; no neural retraining.",
+  "new_module": "mu_corrected = mu_frozen + HGB(raw causal features, mu_frozen, sigma_frozen, causal innovations); point=max(0,mu_corrected).",
+  "control": "Same HGB limits and rows, with aggregate recent-history and derived innovation feature slots replaced by zero. Same nominal capacity, actual leaves reported; not equal effective capacity.",
+  "new_hypothesis_relative_to_rejected_revision_1": "Train-only nonlinear aggregate posterior correction optimized for MAE, not an untrained last-value anchor added to every Gaussian prior mean. The rejected prior-anchor architecture stays rejected.",
+  "parameters": {
+    "loss": "absolute_error",
+    "max_iter": 300,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 30,
+    "learning_rate": 0.05,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "folds": [
+    1,
+    2,
+    3
+  ],
+  "search_seed": 17,
+  "retained_seeds": [
+    17,
+    43,
+    101
+  ],
+  "search_attempts": 6,
+  "historical_search_attempts": 18,
+  "maximum_total_search_attempts": 24,
+  "selection": "Average inner house-macro MAE at least 5% below raw frozen proposal and 1% below no-pattern control; inner RMSE no more than 5% above raw proposal. Complete all 3 folds before decision.",
+  "substantial_superiority_target": "At least 10% lower OOF MAE than strongest completed baseline, reported separately; not promised and never tuned on outer/test.",
+  "if_rejected": "Preserve all negative search fits. Do not continue seeds/final fitting. NB06 records non-promotion and keeps original frozen results.",
+  "if_retained": "Fit same fixed full and no-pattern heads for seeds43/101, complete development OOF, then source-only final full heads and retrospective evaluations.",
+  "distribution_boundary": "This revision initially targets point accuracy. Historical Gaussian covariance/acquisition results cannot be relabelled as results of the corrected head.",
+  "observations": "Reuse exact audited masked raw inputs; no future/current aggregate measurements, test labels or new energy synthesis. Features contain no house ID, row ID, target, role or scenario metadata.",
+  "evaluation_boundary": "All previously inspected domains including UK-DALE are retrospective for v03. No new independent-confirmation claim.",
+  "novelty_boundary": "Residual learning and gradient boosting are known. This experiment can establish a contribution of the module, not mathematical priority."
+}

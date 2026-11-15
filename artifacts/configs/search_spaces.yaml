@@ -1,0 +1,92 @@
+status: prespecified_candidates_not_selected
+selection_metric: inner_validation_house_macro_MAE_kW
+final_development_comparison: paired_outer_OOF
+maximum_trials_per_family: 24
+proposed:
+  canonical_name: Causal Multiscale Sensor-Set Gaussian Reconstruction Network with Balance-Constrained Conditioning
+  history_minutes: [60, 120, 240, 360]
+  d_model: [64, 96, 128]
+  set_layers: [1, 2, 3]
+  attention_heads: [4, 8]
+  covariance_rank: [4, 8, 16]
+  dropout: [0.05, 0.10, 0.20]
+  learning_rate: [0.0001, 0.0003, 0.001]
+  weight_decay: [0.000001, 0.00001, 0.0001]
+  lambda_target: [0.5, 1.0, 2.0]
+  lambda_consistency: [0.0, 0.05, 0.10, 0.20]
+  lambda_reconstruction: [0.10, 0.25, 0.50]
+  initial:
+    history_minutes: 240
+    temporal_width: 64
+    temporal_kernel: 3
+    temporal_dilations: [1, 2, 4, 8, 16, 32]
+    d_model: 96
+    set_layers: 2
+    attention_heads: 4
+    ffn_dimension: 192
+    covariance_rank: 8
+    dropout: 0.10
+    lambda_target: 1.0
+    lambda_consistency: 0.10
+    lambda_reconstruction: 0.25
+  constraints:
+    - d_model must be divisible by attention_heads
+    - masked target and future values must never reach model inputs
+    - covariance diagonal and balance noise must be strictly positive
+    - no sensor-position or house-ID embeddings
+    - all failed trials must be retained
+    - final architecture selection requires development evidence
+baseline_spaces_status: fixed_after_training_cost_audit_before_validation_accuracy
+modern_spaces_status: fixed_after_causal_implementation_review_and_training_only_cost_gates
+modern_point_search_protocol: Configs/modern_point_search.json
+modern_csdi_search_protocol: Configs/modern_csdi_search.json
+
+compute_protocol: Configs/compute_protocol.yaml
+classical_baselines:
+  Ridge:
+    - {alpha: 0.1}
+    - {alpha: 1.0}
+    - {alpha: 10.0}
+    - {alpha: 100.0}
+  Huber:
+    - {epsilon: 1.1, alpha: 0.0001, max_iter: 300}
+    - {epsilon: 1.35, alpha: 0.0001, max_iter: 300}
+    - {epsilon: 1.35, alpha: 0.01, max_iter: 300}
+    - {epsilon: 1.8, alpha: 0.01, max_iter: 300}
+  Autoregressive_Ridge:
+    - {alpha: 0.1}
+    - {alpha: 1.0}
+    - {alpha: 10.0}
+    - {alpha: 100.0}
+  ExtraTrees:
+    - {n_estimators: 128, max_depth: 16, min_samples_leaf: 4, max_features: 1.0}
+    - {n_estimators: 128, max_depth: null, min_samples_leaf: 4, max_features: 0.7}
+    - {n_estimators: 128, max_depth: 16, min_samples_leaf: 16, max_features: 0.7}
+    - {n_estimators: 128, max_depth: null, min_samples_leaf: 16, max_features: 1.0}
+  HistGradientBoosting:
+    - {max_iter: 150, max_leaf_nodes: 15, learning_rate: 0.05, l2_regularization: 0.1, min_samples_leaf: 20}
+    - {max_iter: 300, max_leaf_nodes: 31, learning_rate: 0.05, l2_regularization: 1.0, min_samples_leaf: 20}
+    - {max_iter: 150, max_leaf_nodes: 31, learning_rate: 0.1, l2_regularization: 0.1, min_samples_leaf: 50}
+    - {max_iter: 300, max_leaf_nodes: 15, learning_rate: 0.1, l2_regularization: 1.0, min_samples_leaf: 50}
+  CatBoost:
+    - {iterations: 400, depth: 4, learning_rate: 0.05, l2_leaf_reg: 3.0}
+    - {iterations: 400, depth: 6, learning_rate: 0.05, l2_leaf_reg: 3.0}
+    - {iterations: 400, depth: 8, learning_rate: 0.05, l2_leaf_reg: 10.0}
+    - {iterations: 400, depth: 6, learning_rate: 0.1, l2_leaf_reg: 10.0}
+  Mask_only_ExtraTrees:
+    - {n_estimators: 128, max_depth: 16, min_samples_leaf: 4, max_features: 1.0}
+    - {n_estimators: 128, max_depth: null, min_samples_leaf: 4, max_features: 0.7}
+    - {n_estimators: 128, max_depth: 16, min_samples_leaf: 16, max_features: 0.7}
+    - {n_estimators: 128, max_depth: null, min_samples_leaf: 16, max_features: 1.0}
+
+huber_optimizer_completion:
+  trigger: every initial fold-1 candidate reached 300 iterations with ConvergenceWarning
+  segment_iterations: 300
+  maximum_segments: 10
+  warm_start: true
+  stop_on: optimizer convergence or original cumulative wall-clock budget
+  initial_attempt_time_included: true
+  hyperparameter_candidates_changed: false
+  original_attempts_preserved: Models/baselines/guldana_n3_20261007_v01/numerical_diagnostics/huber_initial_300_iterations
+
+proposed_initial_search_protocol: Configs/proposed_initial_search.json

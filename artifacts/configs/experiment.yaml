@@ -1,0 +1,157 @@
+protocol_version: 0.1
+status: notebook_02_development_analysis_complete_nb03_clean_reload_pending
+run_id: guldana_n3_20261007_v01
+task: current_interval_aggregate_active_power_reconstruction
+target_unit: kW
+interval_seconds: 60
+source_priority: raw
+development_dataset: Plegma
+external_dataset: REFIT
+development_houses:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+group_locked_houses:
+- 11
+- 12
+- 13
+split:
+  boundary_inputs: timestamps_and_coverage_metadata_only
+  calendar_fractions:
+  - 0.7
+  - 0.1
+  - 0.2
+  calendar_parts:
+  - development
+  - calibration
+  - temporal_locked
+  outer_scheme: expanding_window
+  outer_folds: 3
+  inner_validation_fraction: 0.15
+  purge_minutes: 360
+  freeze_before_target_eda: true
+  timestamps_and_ids_pending_local_audit: false
+  calendar_rule: per_house_70_10_20
+  split_manifest: Manifests/split_manifest.csv
+  split_hash_manifest: Manifests/split_freeze.json
+primary_metric: house_macro_MAE_kW
+secondary_metrics:
+- pooled_MAE_kW
+- RMSE_kW
+- median_AE_kW
+- train_scale_nMAE
+- R2
+- error_quantiles
+- worst_house_MAE_kW
+seeds:
+- 17
+- 43
+- 101
+masking:
+  modes:
+  - point
+  - block
+  - sensor_dropout
+  - mixed
+  block_minutes:
+  - 5
+  - 30
+  - 120
+  auxiliary_availability:
+  - 1.0
+  - 0.75
+  - 0.5
+  - 0.25
+  - 0.0
+  natural_gap_parameters_fit_on: outer_train
+  target_current_always_hidden: true
+  aggregate_current_and_voltage_excluded_at_current_time: true
+  empirical_mask_fit_pending: false
+training:
+  optimizer: AdamW
+  max_epochs: 100
+  early_stopping_source: inner_validation
+  trials_per_family_max: 24
+  compute_budget_pending_training_benchmark: true
+  final_comparison_seeds: 3
+  gradient_clip_norm: 1.0
+  max_architecture_revisions: 3
+uncertainty:
+  interval_levels:
+  - 0.5
+  - 0.8
+  - 0.9
+  - 0.95
+  calibration_source: reserved_calibration_interval
+  selective_retained_coverages:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 0.9
+  - 1.0
+acquisition:
+  aggregate_query_forbidden: true
+  policies:
+  - conditional_variance_reduction
+  - random
+  - train_fixed_ranking
+  - train_mutual_information_ranking
+  budget: all_feasible_auxiliary_sensor_counts
+external:
+  labels_accessible_only_after_freeze: true
+  supervised_adaptation_days:
+  - 1
+  - 3
+  - 7
+  unsupervised_adapter_uses_target_labels: false
+  full_finetuning_control: true
+  common_future_test_for_all_adaptation_budgets: true
+statistics:
+  resampling_unit: house_then_contiguous_time_block
+  bootstrap_replicates: 10000
+  block_length_selected_from_development_dependence: true
+  block_length_pending_development: true
+  multiple_comparison_correction: Holm
+  seeds_independent_units: false
+  confidence_level: 0.95
+graphics:
+  library: Matplotlib
+  font: Times New Roman
+  body_pt: 18
+  title_pt: 20
+  figure_dpi: 350
+  savefig_dpi: 350
+  formats:
+  - PNG
+  - PDF
+quality:
+  version: instrument_range_v2
+  minute_seconds: 60
+  min_observed_10s_bins: 5
+  min_readings: 5
+  max_within_or_edge_gap_seconds: 20
+  exclude_entire_sensor_minute_if_any_invalid: true
+  aggregate_range_W:
+  - 0
+  - 157560
+  boiler_range_W:
+  - 0
+  - 18119.4
+  other_aux_power_range_W:
+  - 0
+  - 4201.6
+  temperature_range_C:
+  - -11
+  - 51
+  humidity_range_percent:
+  - 17
+  - 93
+  interpolate_target: false
+  source: NB01 section 8; metadata-derived equipment envelopes plus accuracy allowance

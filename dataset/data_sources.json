@@ -1,0 +1,46 @@
+{
+  "Plegma": {
+    "doi": "10.15129/3b01a6c6-2efd-424a-b8b8-5fe7fa445ded",
+    "landing_page": "https://pureportal.strath.ac.uk/en/datasets/plegma-dataset/",
+    "license": "CC-BY-4.0",
+    "files": [
+      {
+        "name": "PlegmaDataset_Raw.7z",
+        "url": "https://pureportal.strath.ac.uk/files/180681717/PlegmaDataset_Raw.7z",
+        "kind": "7z",
+        "advertised_size_mb_rounded": 747
+      },
+      {
+        "name": "PlegmaDataset_README_20240326.txt",
+        "url": "https://pure.strath.ac.uk/ws/portalfiles/portal/200360685/PlegmaDataset_README_20240326.txt",
+        "kind": "text",
+        "advertised_size_kb_rounded": 5.18
+      }
+    ]
+  },
+  "REFIT": {
+    "doi": "10.15129/31da3ece-f902-4e95-a093-e0a9536983c4",
+    "landing_page": "https://pureportal.strath.ac.uk/en/datasets/refit-electrical-load-measurements/",
+    "license": "CC-BY-4.0",
+    "files": [
+      {
+        "name": "REFIT_RAW_081116.7z",
+        "url": "https://pureportal.strath.ac.uk/files/62090177/REFIT_RAW_081116.7z",
+        "kind": "7z",
+        "advertised_size_mb_rounded": 666
+      },
+      {
+        "name": "RAW_READ_ME_081116.txt",
+        "url": "https://pure.strath.ac.uk/ws/portalfiles/portal/62090176/RAW_READ_ME_081116.txt",
+        "kind": "text",
+        "advertised_size_kb_rounded": 10.8
+      },
+      {
+        "name": "MetaData_Tables.xlsx",
+        "url": "https://pureportal.strath.ac.uk/files/62090319/MetaData_Tables.xlsx",
+        "kind": "xlsx",
+        "advertised_size_kb_rounded": 28.5
+      }
+    ]
+  }
+}
